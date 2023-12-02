@@ -1,0 +1,133 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Asif Khan | Portfolio</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="cursor-outline"></div>
+        <img src="src/circle.png" alt="circle" id="circle-1">
+        <img src="src/circle.png" alt="circle" id="circle-2">
+        <div id="backglass">
+            <div id="left-sidebar">
+                <div id="profile">
+                    <img src="src/profile.jpg" alt="Asif Khan" id="dp" class="dp" style="z-index: 99999;">
+                </div>
+                <div id="nav">
+                    <a href="#about">About</a>
+                    <a href="#education">Education</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div id="right-sidebar">
+                <div id="about">
+                    <h1>Hello👋, I'm <span id="asif">Asif</span></h1>
+                    <p id="text">Welcome to my digital space! I am a passionate web designer and competitive coder,
+                        always eager to transform creative ideas into functional and visually appealing digital
+                        experiences. Currently pursuing a B.Tech degree in Computer Science Engineering. I am an enthusiastic
+                        undergraduate student with a keen interest in cutting-edge technologies and problem-solving.</p>
+
+                    <p class="details"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i>&nbsp;&nbsp;
+                        mohammadasifkhan619@gmail.com</p>
+                    <p class="details"><i class="fa-solid fa-phone" style="color: #ffffff;"></i> &nbsp;&nbsp;+91
+                        8956742601</p>
+                    <p class="details"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                        &nbsp;&nbsp;Nagpur, Maharashtra,
+                        India.</p>
+                </div>
+
+                <div id="education">
+                    <h1>Education</h1>
+                    <div class="college">
+                        <h2>Anjuman College of Engineering and Technology</h2>
+                        <h4>Bachelor of Technology - B.Tech CSE</h4>
+                        <h5>2025</h5>
+                    </div>
+                    <div class="college">
+                        <h2>Adarsh Sanskar Junior College</h2>
+                        <h4>HSC Science</h4>
+                        <h5>2021</h5>
+                    </div>
+                    <div class="college">
+                        <h2>Blue Diamond English High School</h2>
+                        <h4>SSC</h4>
+                        <h5>2019</h5>
+                    </div>
+                </div>
+
+                <div id="skills">
+                    <h1>Skills</h1>
+                    <div id="languages">
+                        <h2>Languages</h2>
+                        <div id="language">
+                            <h4>HTML</h4>
+                            <h4>CSS</h4>
+                            <h4>Bootstrap</h4>
+                            <h4>javascript</h4>
+                            <h4>MySQL</h4>
+                            <h4>GSAP</h4>
+                            <h4>Shery Js</h4>
+                            <h4>React Js</h4>
+                            <h4>tailblocks</h4>
+                            <h4>tailwind CSS</h4>
+                            <h4>C</h4>
+                            <h4>C++</h4>
+                        </div>
+                    </div>
+                    <div id="tools">
+                        <h2>Tools</h2>
+                        <h4>Vs Code</h4>
+                        <h4>Git & Github</h4>
+                        <h4>Firebase</h4>
+                        <h4>Canva</h4>
+                    </div>
+                </div>
+
+                <div id="contact">
+
+                    <h1>Contact</h1>
+                    <form action="https://formspree.io/f/xbjvvbyq" method="POST">
+                        <input class="input" type="text" id="name" name="Name" placeholder="Full name"
+                            style="text-transform: capitalize;" required>
+                        <input class="input" type="email" id="email" name="Email" placeholder="Email address" required>
+                        <br>
+                        <textarea id="message" placeholder="Message..." name="Message" spellcheck="false"
+                            required></textarea>
+                        <br>
+                        <input type="submit" id="send" value="Send"></input>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Gsap is needed for Basic Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- Scroll Trigger is needed for Scroll Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Three.js is needed for 3d Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+    <!-- ControlKit is needed for Debug Panel -->
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+
+    <!-- Shery js -->
+    <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+
+    <!-- Javascript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
