@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Poppins:wght@100;300;500&display=swap');
+
+::placeholder {
+    color: white;
+    opacity: .5;
+    font-weight: 300;
+}
+
+*::selection {
+    color: #f383ff;
+    background: white;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family: poppins;
+}
+
+body {
+    color: white;
+    background-image: url(src/background1.jpg);
+    background-size: cover;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#cursor-outline {
+    width: 160px;
+    height: 160px;
+    background-color: rgb(0, 195, 255);
+    border-radius: 50%;
+    filter: blur(30px);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+#circle-1{
+    width: 200px;
+    position: absolute;
+    bottom: 50px;
+    left: 70px;
+    animation: circle 6s ease-in-out infinite;
+    transform-origin:center;
+    transition: .5s ;
+}
+
+ #circle-2{
+    width: 200px;
+    position: absolute;
+    top: 150px;
+    right: 30px;
+    animation: secondCircle 6s ease-in-out infinite;
+    transform-origin:center;
+    transition: .5s ;
+}
+
+#backglass {
+    width: 80vw;
+    height: 80vh;
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+    background-color: rgba(198, 231, 255, 0.2);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#left-sidebar {
+    position: relative;
+    width: 260px;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(147, 210, 255, 0.7), rgba(198, 231, 255, 0.2));
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#profile {
+    position: relative;
+    top: 50px;
+    width: 150px;
+    height: 150px;
+    padding: 6px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(233, 147, 255, 1), rgba(107, 167, 252, 1));
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.3);
+}
+
+#dp {
+    width: 150px;
+    border-radius: 50%;
+}
+
+#nav {
+    position: absolute;
+    top: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+#nav a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+}
+
+#right-sidebar {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: calc(100% - 260px);
+    height: 100%;
+    padding: 0px 70px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+#right-sidebar::-webkit-scrollbar {
+    width: 0px;
+}
+
+#asif {
+    color: #f383ff;
+}
+
+#about {
+    position: relative;
+    height: 82.5%;
+    padding-top: 100px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+#about h1,
+#education h1,
+#skills h1,
+#contact h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+#about #text {
+    font-size: 17px;
+    font-weight: 300;
+    width: 80%;
+    margin-bottom: 30px;
+    letter-spacing: .5px;
+}
+
+#about .details {
+    font-size: 14px;
+    margin-top: 10px;
+    background: rgb(255, 255, 255, .0);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    padding: 8px 15px;
+    border-radius: 6px;
+    backdrop-filter: blur(2px);
+    transition: .2s;
+}
+
+#about .details:hover {
+    background: rgb(255, 255, 255, .2);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#education {
+    position: relative;
+    padding-top: 50px;
+    height: 95%;
+    width: 100%;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+#education .college {
+    width: 700px;
+    height: 80px;
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.0);
+    backdrop-filter: blur(2px);
+}
+
+.college h2 {
+    margin-bottom: 6px;
+    font-weight: 600;
+    opacity: .9;
+}
+
+.college h4 {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.college h5 {
+    color: #d415e9;
+    opacity: .8;
+    font-size: .8em;
+}
+
+#skills {
+    position: relative;
+    padding-top: 50px;
+    height: 95%;
+    width: 100%;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+#skills #languages {
+    width: 40%;
+    position: absolute;
+}
+
+#language {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#skills h2 {
+    margin-bottom: 15px;
+    font-weight: 400;
+    opacity: .8;
+}
+
+#skills h4 {
+    width: 100px;
+    padding: 8px 12px;
+    background: linear-gradient(-135deg, rgba(255, 255, 255, 0.4), rgba(198, 231, 255, 0.1));
+    backdrop-filter: blur(2px);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    margin-right: 15px;
+    font-weight: 300;
+    border-radius: 5px;
+}
+
+#skills #tools {
+    width: 40%;
+    position: absolute;
+    left: 40%;
+}
+
+#contact {
+    position: relative;
+    padding-top: 50px;
+    height: 95%;
+    width: 100%;
+}
+
+#contact .input {
+    width: 300px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin-right: 7px;
+    border: none;
+    outline: none;
+    color: white;
+    padding:0px 15px;
+    font-size: 16px;
+}
+
+#contact #message {
+    width: 611px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    resize: none;
+}
+
+#contact #send {
+    width: 100px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 10px ;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: .2s;
+}
+#contact #send:hover{
+    transform: translateY(-8px);
+    box-shadow: 2px 12px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+@keyframes circle{
+    0%{
+        transform: translate(0px, 0px);
+    }
+    50%{
+        transform: translate(20px, 50px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+
+@keyframes secondCircle{
+    0%{
+        transform: translate(0px, 0px);
+    }
+    50%{
+        transform: translate(-50px, -20px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
